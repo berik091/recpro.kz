@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@font-face {
+    font-family: 'Voga Medium';
+    src: local('Voga Medium'), url('fonts/Voga-Medium.woff') format('woff');
+    }
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 200vh;
+    margin: 0;
+    padding: 0;
+}
+/* TOP-HEADER */
+.top-header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    font-size: 14px;
+    padding: 6px 0;
+}
+.top-header .contact-info{
+    display: flex;
+    margin-left: 80px;
+}
+.top-header .contact-info .telephone,
+.top-header .contact-info .email{
+    padding: 0 20px;
+}
+.top-header .contact-info a{
+  color: #000;
+  text-decoration: none;
+}
+.top-header .contact-info a i{
+    color: #1f375d;
+    padding-right: 5px;
+    font-size: 17px;
+}
+.top-header .back-call a i{
+    color: #1f375d;
+    padding-right: 10px;
+    font-size: 17px;
+}
+
+.top-header .back-call{
+    margin-right: 110px;
+}
+
+/* HEADER */
+header{
+    position: fixed;
+    width: 100%;
+    height: 7vh;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding:10px 100px;
+    z-index: 1000;
+    background: #1f375d none repeat center center;
+}
+/* LOGOTIP */
+header .logotip{
+    font-family: 'Voga Medium';
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s;
+    width: 210px;
+    text-align: center;
+    line-height: 4px;
+
+}
+.logotip small{
+    font-size: 10px;
+}
+.logotip .top-line-logo{
+    width: 165px; 
+    border-top: 2px solid#fff;
+    border-right: 2px solid#fff;
+    border-left: 2px solid #fff;
+    height: 12px;
+    position: relative;
+    left: 10%;
+}
+.logotip .bottom-line-logo{
+    width: 165px; 
+    border-bottom: 2px solid#fff;
+    border-right: 2px solid#fff;
+    border-left: 2px solid #fff;
+    height: 12px;
+    position: relative;
+    left: 10%;
+    margin-top: 6px;
+}
+.logotip p{
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.logotip small,
+.logotip span{
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: lighter
+}
+.logotip small::after{
+    content: "\1091F";
+    font-size: 20px;
+
+}
+
+
+/* HEADER */
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+header.sticky{
+    padding:5px 100px;
+    background: #fff;
+    top: 0;
+    left: 0;
+    height: 7vh;
+}
+header.sticky .logotip,
+header.sticky ul li a{
+    color: #1f375d;
+
+}
+/* SLIDER */
+.slider-section{
+    width: 100%;
+    border: 1px solid #4CAF50;
+
+}
+.slider-block{
+    display: block;
+    position: relative;
+    margin: auto;
+    height: 500px;
+    border: 1px solid red;
+    background-size: cover 100%; 
+    z-index: 1000;  
+}
+/* Заголовок слайда */
+.slideText {
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    line-height: 20%;
+    border: 1px solid black;
+}
+    .slideText p span{
+        color: green;
+}
+.slider-block .item{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    border: 1px solid yellow;
+}
+/* Анимация слайдов */
+.slider-block .item img{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+/* Кнопки вперед и назад */
+.slider-block .prev, .slider-block .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider-block .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider-block .prev:hover,
+.slider-block .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-120%);
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #1f375d;
+}
+
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.about{
+    width: 85%;
+    height: 50vh;
+    margin: auto;
+}
+.about .text-part{
+    width: 60%;
+}
+.about h3{
+    font-size: 20px;
+    color: #1f375d;
+}
+.slider-icon-container{
+    /* width: 100%; */
+    display: flex;
+    text-align: center;
+    background: #262626;
+    max-width: 100%;
+    padding: 25px 20px 10px 20px;
+}
+.slider-icon-container .icon{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.slider-icon-container .icon img{
+    display: block;
+    /* position: relative; */
+    width: 25%;
+    height: auto;
+}
+.slider-icon-container .icon-text{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    margin: auto;
+    padding: 0;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 14px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button-slider1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button-slider1:hover {
+    background-color: #4CAF50;
+    color: white;
+}

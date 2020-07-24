@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <title>Recpro</title>
@@ -49,13 +49,20 @@
   <section class="slider-section">
     <div class="slider-block">
       <div class="item">
-          <img src="images/1.jpg" alt="Первый слайд">
-          <div class="slideText">Заголовок слайда 1</div>
+        <div><img src="images/truby-protect-pe-napornye-vodoprovodnye.jpg" alt="Первый слайд"></div>
+        <div class="slideText">
+          <p>Полиэтиленовые трубы</p>
+          <p>диаметры <span>&Oslash;32-630</span></p>
+          <button class="button button-slider1"><a href="#"></a> Подробнее</button>
+        </div>
       </div>
   
       <div class="item">
-          <img src="images/2.jpg" alt="Второй слайд">
-          <div class="slideText">Заголовок слайда 2</div>
+          <img src="images/gofra_truba.jpg" alt="Второй слайд">
+          <div class="slideText">
+            <p>Полиэтиленовые трубы</p>
+            <p>диаметры &Oslash;<span>32-630</span> мм</p>
+          </div>
       </div>
   
       <div class="item">
@@ -72,14 +79,66 @@
       <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
       <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
   </div>
+  <div class="slider-icon-container">
+    <div>
+      <div class="icon">
+        <img src="images/upper_slider/127309389_127309389.webp" alt="">
+      </div>
+      <div class="icon-text">
+          <span>легкий вес, что ускоряет и облегчает процесс монтажа</span>
+      </div>
+    </div>
+    <div>
+      <div class="icon">
+        <img src="images/upper_slider/127311146_127311146.webp" alt="">
+      </div>
+      <div class="icon-text">
+          <span>экологичность – в составе труб нет токсичных веществ</span>
+      </div>
+    </div>
+    <div>
+      <div class="icon">
+        <img src="images/upper_slider/127315679_127315679.webp" alt="">
+      </div>
+      <div class="icon-text">
+          <span>устойчивость к коррозии и химическим веществам</span>
+      </div>
+    </div>
+    <div>
+      <div class="icon">
+        <img src="images/upper_slider/127315990_127315990.webp" alt="">
+      </div>
+      <div class="icon-text">
+          <span>гладкая внутренняя поверхность, не накапливающая осадок</span>
+      </div>
+    </div>
+    <div>
+      <div class="icon">
+        <img src="images/upper_slider/127316736_127316736.webp" alt="">
+      </div>
+      <div class="icon-text">
+          <span>износостойкость и не подверженность к трещинам</span>
+      </div>
+    </div>
+  </div>
   </section>
   
                                       <!-- ABOUT section -->
   <section class="about">
     <div class="text-part">
-      <h3>О Компании</h3>
-      <br/>
-      <h5>Миссия нашей компании: Обеспечение комфорта и безопасности человека, также внести свой вклад в развитие агропромышленности</h5>
+      <h3>О КОМПАНИИ</h3>
+      <p>
+        Компания ТОО «REC Procurement» это экспертный поставщик полиэтиленовых труб отечественного 
+        производства. Также предоставляем услуги поставки из стран Евросоюза, СНГ и Китая оборудования, 
+        комплектующие и сырье для широкого круга клиентов: 
+        <ul>
+          <li>промышленных предприятий, производителей</li>
+          <li>электротехнических оборудовании</li>
+          <li>электромонтажных и строительных компаний</li>
+          <li>Проектные компании</li>
+        </ul>
+      </p>
+      <hr>
     </div>
     <i class="fas fa-phone-alt"></i>
   </section>
