@@ -35,7 +35,7 @@ body{
 .top-header .contact-info a i{
     color: #1f375d;
     padding-right: 5px;
-    font-size: 17px;
+    font-size: 22px;
 }
 .top-header .back-call a i{
     color: #1f375d;
@@ -50,7 +50,7 @@ body{
 /* HEADER */
 header{
     position: sticky;
-    width: 100%;
+    // width: 100%;
     height: 7vh;;
     display: flex;
     justify-content: space-between;
@@ -119,7 +119,6 @@ header ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 15%;
 }
 header ul li{
     position: relative;
@@ -149,11 +148,11 @@ header.sticky ul li a{
 /* SLIDER */
 .slider-section{
     width: 100%;
-
+    display: block;
 }
 .slider-block{
     margin: auto;
-    height: 500px;
+    height: 457px;
     background-size: cover 100%; 
 }
 /* Заголовок слайда */
@@ -208,7 +207,7 @@ header.sticky ul li a{
 .slider-dots {
     display: flex;
     justify-content: center;
-    transform: translateY(-500%);
+    transform: translateY(-200%);
 }
 .slider-dots_item{
     cursor: pointer;
@@ -307,4 +306,38 @@ header.sticky ul li a{
 .button-slider1:hover {
     background-color: #4CAF50;
     color: white;
+}
+.about-other{
+    width: 1140px;
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    justify-content: center;
+}
+.about-other>div{
+    padding: 1em;
+}
+.about-other .about-title{
+    grid-column: 1/4;
+}
+.about-other .about-title h2{
+    font-size: 28px;
+    color: #0c2e8a;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+.about-other .about-title h2::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #50d8af;
+    bottom: 0;
+    left: 0;
+}
+
+.about-other .about-img img{
+width: 100%;
 }
