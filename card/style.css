@@ -1,0 +1,70 @@
+a{
+    text-decoration: none;
+}
+.team-area{
+    padding: 125px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0c2e8a;
+}
+.team-container{
+    width: 1100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.single-img{
+    border-radius: 0 10px 0 33.333px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    width: 350px;
+    height: 220px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transform: translate(0,0);
+    transition: 0.3s;
+}
+.img-one{
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    -weblit-background-size: cover;
+    background-position: center center;
+}
+.img-two{
+    background-image: url(../images/2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.img-three{
+    background-image: url(../images/2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.img-text{
+    background: #e8e8e8;
+    width: 100%;
+    height: auto;
+    position: relative;
+    line-height: 24px;
+    transition: 0.5s ease;
+    display: inline-block;
+    border-start-start-radius: 35px;
+}
+.img-text h4{
+    line-height: 16px;
+    padding: 0;
+    margin: 15px auto;
+    width: 80%;
+    text-align: center;
+    color: #535353;
+}
+.single-img:hover .img-text{
+    background-color: #87bc2c;
+}
+.single-img:hover .img-text h4{
+    color: #fff;
+}
