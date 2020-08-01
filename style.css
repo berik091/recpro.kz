@@ -461,8 +461,6 @@ section.contact{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: #112d42;
 }
 section.contact::before{
     content: '';
@@ -471,27 +469,25 @@ section.contact::before{
     left: 0;
     width: 50%;
     height: 100%;
-    background: #03a9f4;
 }
 section.contact .container{
     position: relative;
     width: 1140px;
     min-height: 400px;
     display: flex;
-    z-index: 1000;
+    z-index: 1000;    
 }
 section.contact .container .contactInfo{
     position: absolute;
     top: 40px;
     width: 350px;
-    height: calc(100%-80px);
+    height: 90%;
     background: #0f3959;
     z-index: 1;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); 
 }
 section.contact .container .contactInfo h2{
     color: #fff;
@@ -523,7 +519,7 @@ section.contact .container .info li span:nth-child(2){
     color: #fff;
     margin-left: 10px;
     font-weight: 300;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 section.contact .container .info li:hover span:nth-child(1) img,
 section.contact .container .info li:hover span:nth-child(2){
@@ -542,20 +538,20 @@ section.contact .contactInfo .sci li a{
 }
 section.contact .contactInfo .sci li a img{
     filter: invert(1);
-    opacity: 0.6;
+    opacity: 0.8;
 }
 section.contact .contactInfo .sci li:hover a img{
     opacity: 1;
 }
 section.contact .container .contactForm{
     position: absolute;
-    padding: 70px 50px;
+    padding: 70px 50px 60px 50px;
     background: #fff;
     margin-left: 220px;
     padding-left: 250px;
     width: calc(100%-100px);
-    height: 85%;
-    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 section .container .contactForm h2{
     color: #0f3959;
@@ -567,7 +563,6 @@ section .container .contactForm .formBox{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 30px;
 }
 section .container .contactForm .formBox .inputBox{
     position: relative;
@@ -579,8 +574,49 @@ section .container .contactForm .formBox .inputBox.w50{
 section .container .contactForm .formBox .inputBox.w100{
     width: 100%;
 }
-section .container .contactForm .formBox .inputBox input{
-    width: 100%;
+section .container .contactForm .formBox .inputBox input,
+section .container .contactForm .formBox .inputBox textarea{
+    width: 100% !important;
     padding: 5px 0;
     font-size: 18px;
+    resize: none;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
 }
+section .container .contactForm .formBox .inputBox textarea{
+    min-height: 100px;
+}
+section .container .contactForm .formBox .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.3s;
+    pointer-events: none;
+}
+section .container .contactForm .formBox .inputBox input:focus ~ span,
+section .container .contactForm .formBox .inputBox textarea:focus ~ span,
+section .container .contactForm .formBox .inputBox input:valid ~ span,
+section .container .contactForm .formBox .inputBox textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: green;   
+}
+section .container .contactForm .formBox .inputBox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: #0f3959;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+section .container .contactForm .formBox .inputBox input[type="submit"]:hover{
+    background: green;
