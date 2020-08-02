@@ -140,6 +140,7 @@ header.sticky{
     top: 0;
     left: 0;
     height: 7vh;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 header.sticky .logotip,
 header.sticky ul li a{
@@ -154,19 +155,7 @@ header.sticky ul li a{
 .slider-block{
     margin: auto;
     height: 457px;
-    background-size: cover 100%; 
-}
-/* Заголовок слайда */
-.slideText {
-    font-size: 30px;
-    text-transform: uppercase;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    line-height: 20%;
-}
-    .slideText p span{
-    color: green;
+    background-size: contain; 
 }
 .slider-block .item{
     -webkit-animation-name: fade;
@@ -174,12 +163,37 @@ header.sticky ul li a{
     animation-name: fade;
     animation-duration: 1.5s;
 }
-/* Анимация слайдов */
+.slider-block .item .img-slaid{
+    display: block;
+    height: 457px;
+}
 .slider-block .item img{
+    display: block;
     width: 50%;
-    height: auto;
+    height: 457px;
     float: right;
 }
+/* Заголовок слайда */
+.slideText {
+    font-size: 26px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 50%;
+}
+.slideText div.list-iso{
+    font-size: 16px;
+    width: 80%;
+    text-transform: initial
+}
+.slideText h5 {
+    text-transform: capitalize;
+}
+.slideText h5 span{
+    color: green;
+}
+
 /* Кнопки вперед и назад */
 .slider-block .prev, .slider-block .next {
     cursor: pointer;
@@ -189,7 +203,7 @@ header.sticky ul li a{
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: #1f375d;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -203,11 +217,14 @@ header.sticky ul li a{
 .slider-block .prev:hover,
 .slider-block .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
 }
 
 .slider-dots {
+    position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    left: 20%;
     transform: translateY(-200%);
 }
 .slider-dots_item{
@@ -215,7 +232,7 @@ header.sticky ul li a{
     height: 12px;
     width: 12px;
     margin: 0 2px;
-    background-color: #ddd;
+    background-color: #81A2F0;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -351,9 +368,13 @@ width: 100%;
 .about-other .about-content ul{
     list-style: none;
     padding-left: 0;
+    padding-top: 5%;
+    font-size: 18px;
 }
 .about-other .about-content ul li i{
     margin-right: 10px;
+    color: #50d8af;
+
 }
 
 /* SERVICES */
@@ -426,7 +447,7 @@ width: 100%;
     background-size: contain
 }
 .img-six{
-    background-image: url(https://gidroguru.com/wp-content/uploads/elektrosvarnye-mufty-dlya-polietilenovyh-trub-v-assortimente.jpeg);
+    background-image: url(https://andar.com.ua/image/data/%D0%BC%D1%83%D1%842.jpeg);
     background-size: contain
 }
 .img-text{
@@ -619,4 +640,5 @@ section .container .contactForm .formBox .inputBox input[type="submit"]{
     padding: 12px;
 }
 section .container .contactForm .formBox .inputBox input[type="submit"]:hover{
-    background: green;
+    background: green
+};
