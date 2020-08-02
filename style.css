@@ -2,7 +2,10 @@
 @font-face {
     font-family: 'Voga Medium';
     src: local('Voga Medium'), url('fonts/Voga-Medium.woff') format('woff');
-    }
+}
+html {
+    scroll-behavior: smooth;
+  }
 a{
     text-decoration: none;
 }
@@ -328,7 +331,7 @@ header.sticky ul li a{
 .about-other{
     width: 1140px;
     margin: 0 auto;
-    padding: 0;
+    padding: 3% 0 0 0;
     display: grid;
     grid-template-columns: 45% 55%;
     justify-content: center;
@@ -482,6 +485,7 @@ section.contact{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 130vh;
 }
 section.contact::before{
     content: '';
@@ -642,3 +646,32 @@ section .container .contactForm .formBox .inputBox input[type="submit"]{
 section .container .contactForm .formBox .inputBox input[type="submit"]:hover{
     background: green
 };
+.product{
+    margin: 0 auto;
+    padding: 0;
+    width: 1140px;  
+    border: 2px solid red;
+}
+.product .container div h3{
+    font-size: 26px;
+    font-weight: 600;
+    width: 1140px;
+    margin: 0 auto;
+}
+.product .container .list-block{
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+}
+.product .container .list-block div ul{
+    padding: 0;
+}
+.product .container .list-block div ul li{
+    list-style: none;
+    padding-bottom: 1rem;
+}
+.product .container .list-block div ul li::before{
+    content: "";
+    border-right: 3px solid green;
+    margin-right: 5px;
+}
