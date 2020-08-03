@@ -430,27 +430,27 @@ width: 100%;
     transition: 0.3s;
 }
 .img-one{
-    background-image: url(https://www.pipe-plast.kz/cms/uploads/file_1570162965_429990349.jpg);
+    background-image: url(images/products/pipes_whater.jpg);
     background-size: contain
 }
 .img-two{
-    background-image: url(https://www.pipe-plast.kz/cms/uploads/file_1570163053_90806207.jpg);
+    background-image: url(images/products/pipes_gas.jpg);
     background-size: contain
 }
 .img-three{
-    background-image: url(https://www.pipe-plast.kz/cms/uploads/file_1572408519_831413358.jpg);
+    background-image: url(images/products/pipes_polipropilen.jpg);
     background-size: contain
 }
 .img-four{
-    background-image: url(https://www.pipe-plast.kz/cms/uploads/file_1572408967_946353930.jpg);
+    background-image: url(images/products/Fitingi.jpg);
     background-size: contain
 }
 .img-five{
-    background-image: url(https://images.kz.prom.st/48112284_flantsy-otvetnye-privarnye.jpg);
+    background-image: url(images/products/flansy.webp);
     background-size: contain
 }
 .img-six{
-    background-image: url(https://andar.com.ua/image/data/%D0%BC%D1%83%D1%842.jpeg);
+    background-image: url(images/products/mufty.jpeg);
     background-size: contain
 }
 .img-text{
@@ -485,7 +485,6 @@ section.contact{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 130vh;
 }
 section.contact::before{
     content: '';
